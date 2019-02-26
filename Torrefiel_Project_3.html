@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Love Mailbox Form </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+/* Style the header */
+header {
+  background-color: #DA627D;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  text-align: left;
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #FEF9FF;
+  height: 1000px; /* only for demonstration, should be removed */
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src = "Artboard_62-512.png"  style="width:160px;height:160;">
+    <font face = "Courier"> <h1> Love Mailbox</h1></font>
+</header>
+
+<section>
+  <article>
+    
+    <form action>
+    <fieldset>
+   <h4> <b>  Name of Sender: </b> </h4> <br>     
+    First name:<br>
+    <input type="text" name="firstname" size="40"> <br>
+    Last name:<br>
+    <input type="text" name="lastname" size="40"> <br><br>
+        
+    <h4> <b> Name of Receiver: </b> </h4> <br>  
+    First name:<br>
+    <input type="text" name="firstname"> <br>
+    Last name:<br>
+    <input type="text" name="lastname"> <br><br>
+    
+    <h4> <b> Message: </b></h4> <br>    
+    <textarea name="message" rows="30" cols="80">
+    Enter text.    
+    </textarea> <br> <br>
+    
+    <script>
+    function clickAlert() {
+    alert("Your letter has been sent!");
+    }
+    </script>
+
+    <input type="button" onclick="clickAlert()" value="Send">
+        
+  </fieldset>
+        
+</form>
+      
+  </article>
+</section>
+
+
+</body>
+</html>
